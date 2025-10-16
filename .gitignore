@@ -1,0 +1,19 @@
+# venv & python caches
+.venv/
+__pycache__/
+
+# secrets
+.streamlit/secrets.toml
+
+# data & models (adjust as needed)
+content/data/**
+content/embedding_model/**
+
+# common junk
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.cache/
+.vscode/
+.DS_Store
+Thumbs.db
