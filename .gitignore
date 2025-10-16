@@ -8,6 +8,7 @@ __pycache__/
 # data & models (adjust as needed)
 content/data/**
 content/embedding_model/**
+.cache/**
 
 # common junk
 .ipynb_checkpoints/

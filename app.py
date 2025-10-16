@@ -55,8 +55,7 @@ def init_llm(temp=0.01):
 def init_rag(num_chunks=2):
     # RAG
     embeddings = HuggingFaceEmbedding(
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
-        cache_folder="./content/embedding_model/",
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
     storage_context = StorageContext.from_defaults(persist_dir="./content/vector_index")
     vector_index = load_index_from_storage(storage_context, embed_model=embeddings)
